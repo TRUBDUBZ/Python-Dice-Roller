@@ -11,7 +11,7 @@ A Python desktop app using `tkinter` and `Pillow` to roll virtual dice with cust
 
 ## 📸 Screenshot
 
-![Dice Roller Screenshot](dicerollerscreenshot.png)
+![Dice Roller Screenshot](dicerollerscreenshot1.png)
 
 ---
 

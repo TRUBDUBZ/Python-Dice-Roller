@@ -1,18 +1,13 @@
-# Python-Dice-Roller
-# 🎲 Dice Roller App (Python + Tkinter)
+## 🎲 Dice Roller App
 
-A fun, simple desktop dice roller application built using Python and Tkinter. Roll a virtual six-sided die with the click of a button! Great for board games, teaching beginner programming, or just some nerdy fun.
+A Python desktop app using `tkinter` and `Pillow` to roll virtual dice with customizable quantity.
 
----
+### 🆕 Features
 
-## 🖥️ Features
-
-- Graphical interface with a dark theme
-- Six unique dice face images
-- Random dice roll each time you click
-- Clean and minimal design
-
----
+- 🎲 Roll 1 to 10 dice
+- 🔢 Shows individual results and total sum
+- 📐 Dice image size adjusts with window resizing
+- ✅ **New!** Added a **Clear Button** to reset the interface without closing the app
 
 ## 📸 Screenshot
 
@@ -36,3 +31,4 @@ Create a virtual environment and install Pillow:
 python3 -m venv venv
 source venv/bin/activate
 pip install pillow
+

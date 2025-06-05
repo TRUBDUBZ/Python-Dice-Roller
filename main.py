@@ -193,6 +193,17 @@ def roll_dice():
         result_label.config(text=f"You rolled: {', '.join(map(str, results))}")
         sum_label.config(text=f"Sum: {sum(results)}")
 
+# Clear button
+def clear_dice():
+    # Destroy any dice labels
+    for label in dice_labels:
+        label.destroy()
+    dice_labels.clear()
+
+    # Clear the result and sum labels
+    result_label.config(text="")
+    sum_label.config(text="")
+
 # Roll button (styled)
 roll_button = ttk.Button(
     main_frame,
@@ -201,6 +212,14 @@ roll_button = ttk.Button(
     command=roll_dice
 )
 roll_button.grid(row=5, column=0, sticky="nsew", pady=10)
+
+clear_button = ttk.Button(
+    main_frame,
+    text="🧹 Clear",
+    style="Custom.TButton",
+    command=clear_dice
+)
+clear_button.grid(row=6, column=0, sticky="nsew", pady=(0, 20))
 
 # Function to handle window resize
 def on_window_resize(event):

@@ -31,7 +31,9 @@ Create a virtual environment and install Pillow:
 python3 -m venv venv
 source venv/bin/activate
 pip install pillow
+```
 
 ### 🏃‍♂️ Run the app
 ```bash
 python3 main.py
+```

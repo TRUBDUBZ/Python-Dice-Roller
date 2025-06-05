@@ -6,7 +6,7 @@ import os
 
 # Color scheme
 ACCENT_COLOR = "#d2fa52"  # Bright lime green
-DARK_COLOR = "#3f4139"    # Dark gray-green
+DARK_COLOR = "#2e2f2b"    # Dark gray-green
 LIGHT_COLOR = "#f4f3ef"   # Light off-white
 
 # Set up main window
@@ -45,8 +45,8 @@ style.configure("TFrame", background=DARK_COLOR)
 # Configure modern spinbox style
 style.configure(
     "Modern.TSpinbox",
-    fieldbackground=DARK_COLOR,
-    background=DARK_COLOR,
+    fieldbackground="#2e2f2b",  # darker than DARK_COLOR
+    background="#2e2f2b",
     foreground=LIGHT_COLOR,
     arrowcolor=ACCENT_COLOR,
     bordercolor=ACCENT_COLOR,
@@ -54,6 +54,8 @@ style.configure(
     darkcolor=ACCENT_COLOR,
     font=("Helvetica", 12)
 )
+
+
 style.map(
     "Modern.TSpinbox",
     fieldbackground=[("readonly", DARK_COLOR)],

@@ -66,7 +66,7 @@ style.map(
 
 # Load dice images
 dice_images = []
-for i in range(1, 5):
+for i in range(1, 7):  # Changed to load dice 1 through 6
     img = Image.open(f"dice{i}.png")
     # Make the image size relative to the window size
     img = img.resize((150, 150), Image.Resampling.LANCZOS)

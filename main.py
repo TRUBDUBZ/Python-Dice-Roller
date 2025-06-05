@@ -3,9 +3,6 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 import random
 import os
-print("Current working directory:", os.getcwd())
-print("Files in this directory:")
-print(os.listdir())
 
 # Color scheme
 ACCENT_COLOR = "#d2fa52"  # Bright lime green
